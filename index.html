@@ -177,8 +177,8 @@
         const maxTransactions = parseInt(
           document.getElementById("num-transactions").value
         );
-        // Randomly select a number between 1 and maxTransactions
-        const count = Math.floor(Math.random() * maxTransactions) + 1;
+        // Randomly select a number between 0 and maxTransactions (inclusive)
+        const count = Math.floor(Math.random() * (maxTransactions + 1));
 
         const timeSpan = parseInt(document.getElementById("time-span").value);
         const itemCount = parseInt(document.getElementById("item-count").value);
